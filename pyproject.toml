@@ -16,6 +16,3 @@ dependencies = [
     "python-multipart",
     "redis"
 ]
-
-[tool.vercel]
-entrypoint = "backend.app.main:app"
