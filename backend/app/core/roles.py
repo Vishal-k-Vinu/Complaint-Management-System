@@ -1,0 +1,9 @@
+USER = "USER"
+ADMIN = "ADMIN"
+STAFF = "STAFF"
+
+VALID_ROLES = {
+    USER,
+    ADMIN,
+    STAFF,
+}
