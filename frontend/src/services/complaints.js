@@ -21,3 +21,12 @@ export const getComplaint = async (complaintId) => {
 
     return response.data;
 };
+
+export const createGuestComplaint = async (data) => {
+    const response = await api.post(
+        "/api/complaints/guest",
+        data
+    );
+
+    return response.data;
+};

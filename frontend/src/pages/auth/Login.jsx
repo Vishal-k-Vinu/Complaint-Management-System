@@ -156,6 +156,15 @@ export default function Login() {
           </button>
         </p>
 
+        <p className="mt-4 text-center text-sm text-neutral-500">
+          <button
+            onClick={() => navigate("/guest-complaint")}
+            className="font-medium text-neutral-950 underline underline-offset-4"
+          >
+            Guest Portal for Complaint Registration
+          </button>
+        </p>
+
       </div>
 
     </main>

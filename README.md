@@ -7,7 +7,8 @@ A production-grade, role-based complaint management system tailored for operatio
 ## 🎯 Features
 
 - **Role-Based Portals**:
-  - **User (Student) Portal**: Register complaints (login-free option available), track status, and view complaint history.
+  - **Guest Portal**: Dedicated non-authenticated portal to register complaints effortlessly without requiring an account.
+  - **User (Student) Portal**: Register complaints, track status, and view your personal complaint history.
   - **Staff (Supervisor) Portal**: View assigned complaints and update their resolution status (`PENDING` -> `IN_PROGRESS` -> `RESOLVED`).
   - **Admin Portal**: Overview of all complaints, analytics dashboard, and delegation of complaints to specific staff members.
 - **Real-time Status Tracking**: Instant updates on the status of raised complaints.
@@ -125,6 +126,8 @@ Web-app/
 
 ## 📝 Usage
 
+- **Guest Portal**: Navigate to the login page and click the "Guest Portal for Complaint Registration" link to quickly log an issue without an account.
+- **Student Portal**: Log in with a student account (e.g., `user1`) to submit new complaints and track the progress of your past submissions.
 - **Staff Operations**: Log in with a Staff account (e.g., `staff1`) to view complaints assigned to you and mark them as `IN_PROGRESS` or `RESOLVED`.
 - **Admin Dashboard**: Log in with an Admin account (e.g., `admin1`) to see all complaints, view system analytics, and assign pending issues to specific supervisors.
 

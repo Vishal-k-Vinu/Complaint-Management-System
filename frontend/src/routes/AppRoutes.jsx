@@ -7,6 +7,7 @@ import {
 
 import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
+import GuestCreateComplaint from "../pages/guest/GuestCreateComplaint";
 
 import ProtectedRoute from "./ProtectedRoute";
 import AdminRoute from "./AdminRoute";
@@ -41,6 +42,11 @@ export default function AppRoutes() {
         <Route
           path="/signup"
           element={<Signup />}
+        />
+
+        <Route
+          path="/guest-complaint"
+          element={<GuestCreateComplaint />}
         />
 
         {/* Student/User routes */}
