@@ -6,8 +6,8 @@ import StatusBadge from "../../components/common/StatusBadge";
 
 const categoryLabels = {
     MAINTENANCE: "Maintenance",
-    ROOM_SERVICE: "Room Service",
-    FOOD_SERVICE: "Food Service",
+    HOSTEL: "Hostel",
+    RAGGING: "Ragging",
 };
 
 const filters = [
@@ -88,7 +88,7 @@ export default function Complaints() {
                     </h1>
 
                     <p className="mt-2 text-sm text-neutral-500">
-                        Review guest complaints and manage staff assignments.
+                        Review student complaints and manage staff assignments.
                     </p>
                 </div>
             </div>

@@ -64,7 +64,7 @@ def main():
             first_name="Alice",
             last_name="Admin",
             username="admin1",
-            email="alice.admin@hotel.com",
+            email="alice.admin@college.com",
             password="Admin@1234",
             role="ADMIN",
         )
@@ -74,17 +74,17 @@ def main():
             first_name="Bob",
             last_name="Supervisor",
             username="staff1",
-            email="bob.supervisor@hotel.com",
+            email="bob.supervisor@college.com",
             password="Staff@1234",
             role="STAFF",
         )
 
         create_user(
             db=db,
-            first_name="Guest",
+            first_name="Student",
             last_name="User",
             username="user1",
-            email="guest.user@hotel.com",
+            email="student.user@college.com",
             password="User@1234",
             role="USER",
         )

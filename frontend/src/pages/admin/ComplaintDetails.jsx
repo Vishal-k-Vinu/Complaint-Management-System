@@ -11,8 +11,8 @@ import Button from "../../components/common/Button";
 
 const categoryLabels = {
     MAINTENANCE: "Maintenance",
-    ROOM_SERVICE: "Room Service",
-    FOOD_SERVICE: "Food Service",
+    HOSTEL: "Hostel",
+    RAGGING: "Ragging",
 };
 
 export default function ComplaintDetails() {

@@ -82,7 +82,7 @@ export default function Dashboard() {
             <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
                 <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-400">
-                        Hotel Operations
+                        College Operations
                     </p>
 
                     <h1 className="mt-2 text-3xl font-semibold tracking-tight">
@@ -90,7 +90,7 @@ export default function Dashboard() {
                     </h1>
 
                     <p className="mt-2 text-sm text-neutral-500">
-                        Monitor guest complaints and staff assignments.
+                        Monitor student complaints and staff assignments.
                     </p>
                 </div>
 

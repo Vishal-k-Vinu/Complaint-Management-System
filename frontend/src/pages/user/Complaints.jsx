@@ -6,14 +6,14 @@ import StatusBadge from "../../components/common/StatusBadge";
 
 const categoryLabels = {
     MAINTENANCE: "Maintenance",
-    ROOM_SERVICE: "Room Service",
-    FOOD_SERVICE: "Food Service",
+    HOSTEL: "Hostel",
+    RAGGING: "Ragging",
 };
 
 const categoryStyles = {
     MAINTENANCE: "bg-neutral-100 text-neutral-700",
-    ROOM_SERVICE: "bg-neutral-100 text-neutral-700",
-    FOOD_SERVICE: "bg-neutral-100 text-neutral-700",
+    HOSTEL: "bg-neutral-100 text-neutral-700",
+    RAGGING: "bg-neutral-100 text-neutral-700",
 };
 
 export default function Complaints() {
@@ -84,7 +84,7 @@ export default function Complaints() {
             <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
                 <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-400">
-                        Guest Services
+                        Student Services
                     </p>
 
                     <h1 className="mt-2 text-3xl font-semibold tracking-tight text-neutral-950">

@@ -13,7 +13,7 @@ export default function StaffLayout() {
                     {/* Brand */}
                     <div className="border-b border-neutral-200 px-6 py-6">
                         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-neutral-400">
-                            Hotel Operations
+                            College Operations
                         </p>
 
                         <h1 className="mt-2 text-lg font-semibold">

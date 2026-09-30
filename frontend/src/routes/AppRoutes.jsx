@@ -43,7 +43,7 @@ export default function AppRoutes() {
           element={<Signup />}
         />
 
-        {/* Guest/User routes */}
+        {/* Student/User routes */}
         <Route element={<ProtectedRoute />}>
           <Route element={<AppLayout />}>
 

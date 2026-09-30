@@ -150,12 +150,12 @@ export default function CreateComplaint() {
                                 Maintenance
                             </option>
 
-                            <option value="ROOM_SERVICE">
-                                Room Service
+                            <option value="HOSTEL">
+                                Hostel
                             </option>
 
-                            <option value="FOOD_SERVICE">
-                                Food Service
+                            <option value="RAGGING">
+                                Ragging
                             </option>
                         </select>
                     </div>

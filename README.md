@@ -1,13 +1,13 @@
 # Complaint Management System
 
-A production-grade, role-based complaint management system tailored for operational and facility management (e.g., hotel operations). It features dedicated portals for Users (Guests), Staff (Supervisors), and Administrators, ensuring seamless registration, delegation, and resolution of issues.
+A production-grade, role-based complaint management system tailored for operational and facility management (e.g., college operations). It features dedicated portals for Users (Students), Staff (Supervisors), and Administrators, ensuring seamless registration, delegation, and resolution of issues.
 
 ---
 
 ## 🎯 Features
 
 - **Role-Based Portals**:
-  - **User (Guest) Portal**: Register complaints (login-free option available), track status, and view complaint history.
+  - **User (Student) Portal**: Register complaints (login-free option available), track status, and view complaint history.
   - **Staff (Supervisor) Portal**: View assigned complaints and update their resolution status (`PENDING` -> `IN_PROGRESS` -> `RESOLVED`).
   - **Admin Portal**: Overview of all complaints, analytics dashboard, and delegation of complaints to specific staff members.
 - **Real-time Status Tracking**: Instant updates on the status of raised complaints.
