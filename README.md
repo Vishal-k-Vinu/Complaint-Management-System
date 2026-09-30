@@ -95,14 +95,9 @@ Web-app/
    ACCESS_TOKEN_EXPIRE_MINUTES=30
    REDIS_URL=redis://localhost:6379/0
    ```
+   
 
-5. **Seed the database** (Optional):
-   Populate the database with default Admin, Staff, and Guest roles.
-   ```bash
-   python seed.py
-   ```
-
-6. **Start the FastAPI server**:
+5. **Start the FastAPI server**:
    ```bash
    uvicorn app.main:app --reload
    ```
@@ -130,7 +125,6 @@ Web-app/
 
 ## 📝 Usage
 
-- **Guest Portal**: Navigate to the login page and click "Continue to Guest Portal" to quickly register a complaint without manual sign-up.
 - **Staff Operations**: Log in with a Staff account (e.g., `staff1`) to view complaints assigned to you and mark them as `IN_PROGRESS` or `RESOLVED`.
 - **Admin Dashboard**: Log in with an Admin account (e.g., `admin1`) to see all complaints, view system analytics, and assign pending issues to specific supervisors.
 
