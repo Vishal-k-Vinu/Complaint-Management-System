@@ -1,2 +1,8 @@
+[project]
+name = "web-app"
+version = "0.1.0"
+description = "Web App Backend"
+requires-python = ">=3.9"
+
 [tool.vercel]
 entrypoint = "backend.app.main:app"
