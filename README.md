@@ -61,66 +61,48 @@ Web-app/
 
 ---
 
-## 🚀 Setup and Installation
+## 🚀 Setup and Installation (Docker)
+
+The easiest way to run the application is using Docker and Docker Compose. This ensures both the frontend and backend are spun up with the correct configurations automatically.
 
 ### Prerequisites
-- Python 3.9+
-- Node.js 18+
-- PostgreSQL
-- Redis Server
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-### 1. Backend Setup
+### Running Locally
 
-1. **Navigate to the backend directory**:
-   ```bash
-   cd backend
-   ```
-
-2. **Create and activate a virtual environment** (optional but recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure Environment Variables**:
-   Create a `.env` file in the `backend` directory containing your database and Redis configurations:
+1. **Configure Environment Variables**:
+   Create a `.env` file in the `backend` directory containing your database and Redis configurations (or leave defaults if your services are remote):
    ```env
-   DATABASE_URL=postgresql://user:password@localhost:5432/complaint_db
+   DATABASE_URL=postgresql://user:password@remote-db-host:5432/complaint_db
    SECRET_KEY=your_super_secret_jwt_key
    ALGORITHM=HS256
    ACCESS_TOKEN_EXPIRE_MINUTES=30
-   REDIS_URL=redis://localhost:6379/0
+   REDIS_URL=redis://remote-redis-host:6379/0
    ```
-   
 
-5. **Start the FastAPI server**:
+2. **Build and Start Containers**:
+   From the root of the project, run:
    ```bash
-   uvicorn app.main:app --reload
-   ```
-   *The API will be available at http://127.0.0.1:8000*
-
-### 2. Frontend Setup
-
-1. **Navigate to the frontend directory**:
-   ```bash
-   cd frontend
+   docker compose up --build
    ```
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+3. **Access the Applications**:
+   - **Frontend App**: [http://localhost:8080](http://localhost:8080)
+   - **Backend API**: [http://localhost:8000](http://localhost:8000)
+   - **Interactive API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-   *The web application will be available at http://127.0.0.1:5173*
+---
+
+## ☁️ Deployment (Render)
+
+This project is configured to be easily deployable on [Render](https://render.com/).
+
+1. Connect your repository to Render.
+2. Create a **Web Service** for the `backend` using the `backend/Dockerfile`.
+3. Create a **Web Service** for the `frontend` using the `frontend/Dockerfile`.
+4. Ensure you set the necessary environment variables (`DATABASE_URL`, `REDIS_URL`, `SECRET_KEY`) in the Render dashboard for the backend service.
+5. The `docker-compose.yml` is also provided if you plan to deploy to a VPS using Docker directly.
 
 ---
 
