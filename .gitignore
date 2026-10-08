@@ -29,3 +29,5 @@ yarn-debug.log*
 yarn-error.log*
 backend/.env
 frontend/.env
+backend/.env
+frontend/.env
